@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "211665643773",
+    "project_id": "online-shopping-e21cc",
+    "storage_bucket": "online-shopping-e21cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211665643773:android:c2eeac96619aecb5f27694",
+        "android_client_info": {
+          "package_name": "compess.shopping.onlineshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211665643773-hf9cv1su2ip491aj04qvj7hbq9dt9dud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi4GbvCP7PQPnnlCZUhmtkIp8UEiPHimY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211665643773-hf9cv1su2ip491aj04qvj7hbq9dt9dud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

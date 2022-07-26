@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#5CC09f">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageProfileDp"
+                android:contentDescription="@string/profile_default_logo"
+                android:background="@drawable/no_profile_pic"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/tvShowWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageProfileDp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:hint="@string/loading"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/white"
+                android:textColorHint="#006064" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_profile"
+                android:contentDescription="@string/profile_default_logo"
+                android:background="@drawable/ic_profile"/>
+
+            <TextView
+                android:id="@+id/tv_show_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ic_profile"
+                android:layout_marginStart="50dp"
+                android:hint="@string/loading"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/fulname_line"
+                android:layout_below="@+id/tv_show_full_name"
+                android:background="@android:color/darker_gray"/>
+
+            <ImageView
+                android:id="@+id/ic_email"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/fulname_line"
+                android:contentDescription="@string/email_icon"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/tv_show_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fulname_line"
+                android:layout_alignStart="@+id/ic_profile"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/loading"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/devider_email"
+                android:layout_below="@+id/tv_show_email"
+                android:background="@android:color/darker_gray"/>
+
+            <!-- Date of birth -->
+            <ImageView
+                android:id="@+id/ic_dob"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/date_of_birth_icon"
+                android:layout_below="@+id/devider_email"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_dob" />
+
+            <TextView
+                android:id="@+id/tv_show_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devider_email"
+                android:layout_alignStart="@+id/ic_profile"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/loading"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/devider_dob"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_show_dob"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--Gender-->
+            <ImageView
+                android:id="@+id/ic_gender"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/gender_icon"
+                android:layout_below="@+id/devider_dob"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_gender" />
+
+            <TextView
+                android:id="@+id/tv_show_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devider_dob"
+                android:layout_alignStart="@+id/ic_profile"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/loading"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/devider_gender"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_show_gender"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--Telephone number-->
+            <ImageView
+                android:id="@+id/ic_phone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:contentDescription="@string/phone_number_icon"
+                android:layout_below="@+id/devider_gender"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_mobile" />
+
+            <TextView
+                android:id="@+id/tv_show_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devider_gender"
+                android:layout_alignStart="@+id/ic_profile"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:hint="@string/loading"
+                android:textSize="16sp" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone"/>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

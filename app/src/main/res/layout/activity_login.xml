@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:background="@color/white"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_v_login_head"
+            android:padding="6dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/lg_credentials"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:id="@+id/tv_loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_v_login_head"
+            android:layout_marginTop="50dp"
+            android:padding="6dp"
+            android:text="@string/email_address2"
+            android:textColor="#555555"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/loginEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_loginEmail"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:hint="@string/emailRegister"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="26sp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginEmailAddress"
+            android:layout_marginTop="40dp"
+            android:padding="6dp"
+            android:text="@string/password"
+            android:textColor="#555555"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/lg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_loginPassword"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:layout_marginStart="38dp"
+            android:hint="@string/passwordtext"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="26sp"
+            android:importantForAutofill="no" />
+
+        <ImageView
+            android:id="@+id/show_hidePassword"
+            android:layout_width="38dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/hide_password_icon"
+            android:layout_below="@+id/tv_loginPassword"
+            android:layout_marginTop="20dp" />
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lg_password"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="70dp"
+            android:text="@string/login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"
+
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
